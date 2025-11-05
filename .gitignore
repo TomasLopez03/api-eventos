@@ -1,0 +1,38 @@
+# ------------------------------------
+# 1. Entornos de Desarrollo Local
+# ------------------------------------
+venv/
+env/
+*.pyc
+__pycache__/
+*.orig
+
+# ------------------------------------
+# 2. Archivos de Django y BBDD
+# ------------------------------------
+*.sqlite3          # Base de datos SQLite (CRÍTICO)
+db.sqlite3
+/media
+/static
+.DS_Store          # Archivos de macOS
+local_settings.py  # Archivos de configuración con secretos (si usas uno)
+
+# Archivos de logs y runtime
+*.log
+*.pot
+*.mo
+*.prof
+
+# ------------------------------------
+# 3. Configuraciones de IDEs
+# ------------------------------------
+.idea/             # PyCharm/IntelliJ
+.vscode/           # VS Code
+*~
+
+# ------------------------------------
+# 4. Dependencias del Paquete Python
+# ------------------------------------
+dist/
+build/
+*.egg-info/
